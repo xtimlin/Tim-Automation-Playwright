@@ -5,6 +5,7 @@ from page_objects.consumer_affairs.awards import Awards
 from page_objects.consumer_affairs.review.write_review import WriteReview
 
 
+@pytest.mark.skip(reason="Skipping because the website's bot detection system is blocking the test.")
 class TestConsumerAffairs:
     @pytest.fixture(autouse=True)
     def setup_method(self, browser: Browser, base_url: str):
