@@ -29,5 +29,16 @@ pytest --base-url=https://consumeraffairs.com/      # run with different enverim
 pytest --browser=chromium --headed --slowmo=200 --base-url=https://consumeraffairs.com/
 ```
 
-I highly recommend running this against to the staging environment because the production environment has bot checks that will likely cause the tests to fail.
+
+
+# Project Status and Environment Notes
+## [Main branch](https://github.com/xtimlin/Tim-Automation-Playwright)
+* The main branch of this project is configured to run tests against https://consumeraffairs.com/.
+* Due to the website's bot detection system, my automation scripts will fail. This is an expected behavior, not a bug in the code.
+* I highly recommend running this against to the staging environment if you want to try.
+
+## [Expand_testing](https://github.com/xtimlin/Tim-Automation-Playwright/tree/expand_testing)
+* I have created a separate branch called expand_testing that targets https://practicetestautomation.com/.
+* All tests on this branch are running successfully, both locally and in [GitHub Actions](https://github.com/xtimlin/Tim-Automation-Playwright/actions/runs/17880307297).
+
 
