@@ -1,4 +1,4 @@
-from ..base import BasePage
+from page_objects.base import BasePage
 from playwright.sync_api import Page, expect, Locator
 
 

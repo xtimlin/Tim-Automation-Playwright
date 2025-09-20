@@ -1,8 +1,8 @@
 import pytest
 from playwright.sync_api import Browser, BrowserContext, Page
-from page_objects.home import Home
-from page_objects.awards import Awards
-from page_objects.review.write_review import WriteReview
+from page_objects.consumer_affairs.home import Home
+from page_objects.consumer_affairs.awards import Awards
+from page_objects.consumer_affairs.review.write_review import WriteReview
 
 
 class TestConsumerAffairs:
